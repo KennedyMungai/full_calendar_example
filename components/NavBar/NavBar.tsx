@@ -4,12 +4,13 @@ import InteractionPlugin from '@fullcalendar/interaction'
 import FullCalendar from '@fullcalendar/react'
 import { Button } from '../ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
+import moment from 'moment'
 
 type Props = {}
 
 const NavBar = (props: Props) => {
     const handleDateClick = (arg:any) => {
-        console.log(arg.date)
+        console.log(moment(arg.date).format("DD/MM/YYYY"))
     }
 
 	return (
