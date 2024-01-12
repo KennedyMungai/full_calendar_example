@@ -9,7 +9,7 @@ type Props = {}
 
 const NavBar = (props: Props) => {
     const handleDateClick = (arg:any) => {
-        console.log(arg.dateStr)
+        console.log(arg.date)
     }
 
 	return (
