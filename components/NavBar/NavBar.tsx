@@ -5,12 +5,17 @@ import FullCalendar from '@fullcalendar/react'
 import { Button } from '../ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
 import moment from 'moment'
+import { useAppDispatch } from '@/redux/hooks'
+import { retrieveSomethingFromASpecificDate } from '@/redux/features/globalDate/globalDateSlice'
 
 type Props = {}
 
 const NavBar = (props: Props) => {
+    const dispatch = useAppDispatch()
+
     const handleDateClick = (arg:any) => {
         console.log(moment(arg.date).format("DD/MM/YYYY"))
+        dispatch(retrieveSomethingFromASpecificDate(arg.date))
     }
 
 	return (
