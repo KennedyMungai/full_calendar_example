@@ -6,7 +6,12 @@
 	],
 	"settings": {
 		"cSpell.words": [
-			"reduxjs"
+			"clsx",
+			"daygrid",
+			"fullcalendar",
+			"lucide",
+			"reduxjs",
+			"tailwindcss"
 		]
 	}
 }
