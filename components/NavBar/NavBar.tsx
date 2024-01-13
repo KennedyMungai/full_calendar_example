@@ -14,7 +14,7 @@ const NavBar = (props: Props) => {
     const dispatch = useAppDispatch()
 
     const handleDateClick = (arg:any) => {
-        console.log(moment(arg.date).format("DD/MM/YYYY"))
+        // console.log(moment(arg.date).format("DD/MM/YYYY"))
         dispatch(retrieveSomethingFromASpecificDate(arg.date))
     }
 

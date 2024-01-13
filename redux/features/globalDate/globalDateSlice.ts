@@ -4,7 +4,7 @@ import { RootState } from "../store"
 
 
 export const retrieveSomethingFromASpecificDate = createAsyncThunk("date/specificDay", async (date: Date) => {
-    console.log(date)
+    // console.log(date)
 })
 
 
